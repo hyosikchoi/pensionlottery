@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/switchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/articleNumberPicker"
+        android:layout_marginBottom="20dp"
+        android:text="눌러"
+        />
+
+    <NumberPicker
+        android:id="@+id/articleNumberPicker"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:theme="@style/AppTheme.NumberPicker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/joTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="조"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/articleNumberPicker"
+        app:layout_constraintStart_toEndOf="@+id/articleNumberPicker"
+        app:layout_constraintEnd_toStartOf="@+id/numberPicker1"
+        app:layout_constraintTop_toTopOf="@+id/articleNumberPicker" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker1"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:theme="@style/AppTheme.NumberPicker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/joTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker2"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:theme="@style/AppTheme.NumberPicker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numberPicker1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker3"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:theme="@style/AppTheme.NumberPicker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numberPicker2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker4"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:theme="@style/AppTheme.NumberPicker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numberPicker3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker5"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:theme="@style/AppTheme.NumberPicker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numberPicker4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker6"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:theme="@style/AppTheme.NumberPicker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numberPicker5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="48sp"
+        tools:text="1조478903"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="@+id/articleNumberPicker"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
